@@ -48,58 +48,20 @@
 * Currently running: 0.6.2
 * [The Vanilla Laptop Guide](https://1revenger1.gitbook.io/laptop-guide/): OpenCore laptop guide and documentation.
 
-### macOS
-#### General Information
-* [Hackintool: The Swiss army knife of vanilla Hackintoshing.](https://github.com/headkaze/Hackintool)
-* [How to download a full ‘Install macOS’ app with software update in TERMINAL](https://scriptingosx.com/2019/10/download-a-full-install-macos-app-with-softwareupdate-in-catalina/)
-
-### Windows
-##### Drivers
-* Wifi + Bluetooth (BCM94360CS2): [Apple Bootcamp Wifi + Bluetooth Drivers](https://github.com/Errrneist/Hackintosh-Thinkpad-X1-Extreme/releases/tag/v943602CS.1)
-   
 ### BIOS
 * I strongly recommend following the steps from [Razer Blade 15 Advanced (Mojave and Catalina)](https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh) to modify your BIOS.
 * Note that using other people's BIOS is generally a really, really bad idea. It WILL possibly block your machine.
 
-
-### Wifi & Bluetooth
-* In order to get Bluetooth and Wifi working, a wireless card replacement is needed.
-* For now, the best card to use is BCM94360CS2 using a NGFF adapter which you can buy on eBay. It has the highest performance among all other hackintosh-able wireless cards. It is natively supported in OpenCore (v2.X and above). For clover machines, you will want to use DW1830 with some additional kext. 
-<img align="left" src="https://github.com/Errrneist/Hackintosh-Razer-Blade-Advanced/blob/master/IMG/wifi_adapter.jpeg" alt="adapter" width="1024">
-
-* Broadcom Wifi Card Experiments:
-  * BCM94360CS2 -> Wifi: Working, BT: Working. 
-
-* Intel Wifi Cards: Someone got Intel AX Wifi working. 
-  * Wifi: 
-    * [itlwm: Repository](https://github.com/OpenIntelWireless/itlwm) 
-    * [itlwm: Wiki](https://openintelwireless.github.io/itlwm/)
-    *  I did not validated it on my machine just FYI.
-  * BT: 
-    * [IntelBluetoothFirmware: Repository](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) 
-    * This one I actually tested it on Big Sur using a AX200, it works but the connection quality is very poor.
-
-### GPU
-##### iGPU
-* UHD 630 is supported from 2.X and above. With patched iGPU can achieve internal 144Hz.
-
-##### dGPU
-* NVIDIA RTX 2070 Max-Q is not supported.
-* A proper way to disable dGPU can be found here: [Patching to disable dGPU](https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/issues/19#issuecomment-632171858) I just don't have the time and effort to do it right now (As of Sept 25, 2020) because a recent technical breakdown corrupted my macOS and Windows system. You'll have to do it separately on top of my configurations.
-* [Apple and Nvidia Are Over: NVIDIA drops CUDA support for macOS.](https://gizmodo.com/apple-and-nvidia-are-over-1840015246)
-* Currently, there is nothing we can do. Let's hope Apple and NVIDIA work together again. 
-
-### System Preferences
-   * [How to customize the “About This Mac” section of a Mac, Joaquim Barbosa](https://www.idownloadblog.com/2017/01/13/how-to-modify-about-this-mac-hackintosh/).
-     
-### Thunderbolt
-  * HotPlug works, but doesn't recognize the eGPU
+### Windows
+##### Drivers
+* Wifi + Bluetooth (BCM94360CS2): [Apple Bootcamp Wifi + Bluetooth Drivers](https://github.com/Errrneist/Hackintosh-Thinkpad-X1-Extreme/releases/tag/v943602CS.1)
       
-### Other Configurations:
+## Other Configurations:
 | Owner | CPU | Model | Bootloader | Link |
 | --- | --- | --- | --- | --- |
 | stonevil | i7-8750H | RZ09-0288 | Clover | [Link](https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh)
 | boyuanx | i7-9750H | RZ09-0301 | OpenCore | [Link](https://github.com/stonevil/Razer_Blade_Advanced_early_2019_Hackintosh/issues/23#issuecomment-629762916) |
+| Errrneist | i7-9750H | RZ09-0301 | OpenCore | [Link](https://github.com/Errrneist/Hackintosh-Razer-Blade-RZ09-0301) |
 
 ## Contributors
 * Note: There is no order in the ranking of names. 
