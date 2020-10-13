@@ -45,6 +45,7 @@
 | Discrete GPU | Disabled | NVIDIA RTX 2070 Max-Q 8GB GDDR6 |
   
 ### OpenCore
+* Currently running: 0.6.2
 * [The Vanilla Laptop Guide](https://1revenger1.gitbook.io/laptop-guide/): OpenCore laptop guide and documentation.
 
 ### macOS
